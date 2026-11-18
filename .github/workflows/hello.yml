@@ -1,0 +1,22 @@
+
+name: Hello World Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello Sravan!"
+
+      - name: Show date
+        run: date
+
+      - name: Show current directory
+        run: pwd
